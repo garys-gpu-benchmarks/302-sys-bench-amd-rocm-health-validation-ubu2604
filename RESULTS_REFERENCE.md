@@ -3,7 +3,7 @@
 **Main goal:** Analyze GPU ROCm runtime environment health  
 **Tools:** Run dmesg, amd-smi metric, rocminfo, and sysfs PCIe link files
 
-Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_143 · recorded 2026-11-16). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
+Reference results measured by the maintainer on the system shown in each section (generator TEMPLATE_00_145 · recorded 2026-11-17). Your own runs write `results/RESULTS_ACTUAL.md` in the same format.
 
 > Smoke runs use deliberately small sizes. They check that the workload installs and runs end to end; their numbers are not performance results. Baseline and extended are.
 
@@ -11,9 +11,9 @@ Reference results measured by the maintainer on the system shown in each section
 ## smoke
 
 - **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 26.04.1 LTS · kernel 7.0.0-38-generic · driver 7.1.9.31600000
-- **Run:** 2026-11-16T19:03:50Z · status **PASS** (exit 0)
-- **Time (mm:ss):** setup 00:10 · benchmark 00:05 · whole run 00:21
-- **Source:** run 302_20261116_190350
+- **Run:** 2026-11-17T10:51:45Z · status **PASS** (exit 0)
+- **Time (mm:ss):** setup 00:11 · benchmark 00:06 · whole run 00:22
+- **Source:** run 302_20261117_105145
 - **Command:** `bash run_benchmark.sh --smoke --monitor-duration-sec 5 --expected-gpu-count 1 --min-pcie-link-width 16`
 
 | # | Metric | Result |
